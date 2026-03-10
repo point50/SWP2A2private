@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background: #e6f9ff;
+}
+header {
+    background: #79a3d9;
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    padding: 10px;
+}
+
+header img{
+    width:40px;
+    margin-right:10px;
+    margin-left:20px;
+}
+
+header .adopt-button{
+    background-color: black;
+    border-radius: 45%;
+    padding: 0px 10px 0px 10px;
+}
+
+header .adopt-button h2{
+    color: white;
+}
+
+footer {
+    background:#0d3263;
+    color:white;
+    padding:15px;
+    margin-top:40px;
+}
+
+footer.left{
+    text-align:left;
+}
+
+footer.center{
+    text-align:center;
+}
+
+.catalog{
+    padding:30px;
+}
+
+.dog-list {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.dog-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.dog-card{
+    background: white;
+    border:1px solid #4e77ad;
+    padding:10px;
+    text-align:center;
+    transition:0.2s;
+}
+
+.dog-card img{
+    width:100%;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+}
+
+.dog-card:hover{
+    transform:scale(1.03);
+}
+
+.dog-card .dog-desc{
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*adopt page*/
+.adoption-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    max-width:450px;
+    margin:40px auto;
+    padding:25px;
+
+    background:white;
+    border:1px solid #4e77ad;
+}
+
+/* labels */
+.adoption-form label{
+    font-weight:600;
+    margin-top:5px;
+}
+
+/* text inputs */
+.adoption-form input[type="text"],
+.adoption-form input[type="email"],
+.adoption-form input[type="tel"],
+.adoption-form input[type="number"],
+.adoption-form select{
+    padding:10px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+/* focus effect */
+.adoption-form input:focus,
+.adoption-form select:focus{
+    outline:none;
+    border-color:#4e77ad;
+}
+
+/* radio group */
+.inoutdoor{
+    display:flex;
+    gap:20px;
+    margin:10px 0;
+}
+
+.inoutdoor label{
+    font-weight:normal;
+}
+
+/* agreement checkbox */
+.agreement{
+    display:flex;
+    gap:10px;
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* buttons */
+.adoption-form button{
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.adoption-form a{
+    display:flex;
+    flex-direction:column;
+}
+
+/* adopt button */
+.adoption-form button[type="submit"]{
+    background:#4e77ad;
+    color: white;
+}
+
+/* return button */
+.adoption-form button[type="button"]{
+    background:#888;
+    color:white;
+}
