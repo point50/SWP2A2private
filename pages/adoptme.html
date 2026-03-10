@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
     <header>
-      <img src="assets/dogpaw.png" />
+      <img src="../assets/dogpaw.png" />
       <h1>Dog adoption</h1>
     </header>
 
-        <form class="adoption-form">
+        <form class="adoption-form" id="adoptionForm" novalidate>
         <h2>Please fill this from</h2>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="inputName">Name</label>
+        <input type="text" id="inputName" name="inputName" placeholder="Enter your name" required>
 
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
@@ -26,6 +26,7 @@
 
         <label for="house">Select a your house type</label>
         <select id="house" name="house">
+            <option value="">--select your house type--</option>
             <option value="terrarium">Terrarium House</option>
             <option value="detached">Detached House</option>
             <option value="townhouse">Town House</option>
@@ -46,13 +47,13 @@
         <label for="petamount">Amount of pets in your household</label>
         <input type="number" id="petamount" name="petamount" min="0" required>
 
-        <label class="agreement">
+        <label class="agreement" id = "agreement">
         <input type="checkbox" name="agreement" required>
         I understand that submitting this form only shows my interest in adopting the dog.
         It does not guarantee that I will receive the dog.
         </label>
         <button type="submit">Adopt</button>
-        <a href="index.html">
+        <a href="../index.html">
         <button type="button">Return</button>
         </a>
     </form>
@@ -60,5 +61,9 @@
     <footer class = "center">
         <p>Phon Pornprasertsuk | 6833207021</p>
     </footer>
+
+
+    <script src = "../js/adoptme.js"></script>
 </body>
+
 </html>
