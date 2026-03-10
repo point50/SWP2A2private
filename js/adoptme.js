@@ -6,7 +6,7 @@ form.addEventListener("submit", function(event) {
     let missing = [];
 
     if(!inputName.value) missing.push("Name");
-    if(!phone.value) missing.push("Phone");
+    if(!phone.value) missing.push("Phone number");
 
     if(!email.value) {
         missing.push("Email");
